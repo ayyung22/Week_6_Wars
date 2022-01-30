@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Card Game</title>
+  </head>
+  <style>
+    .computer,
+    .player {
+      width: 40vw;
+      height: 30vh;
+      border: 1px solid gray;
+      padding: 30px;
+    }
+
+    .card {
+      border: 1px solid black;
+      width: 70px;
+      height: 110px;
+      margin-left: 50px;
+    }
+
+    .drawed-card, .pile {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .deck {
+      background: pink;
+    }
+
+  </style>
+  <body>
+    <div class="computer">
+      <div class="pile">
+        <div class="card" id="com-deck"></div>
+        </div>
+      <div class="drawed-card"> 
+        <div class="score">
+        Computer Deck: <span id="com-score">26</span>
+      </div>
+      <div class="card deck" id="com-card">
+        <div class="number"></div>
+        <div class="shape"></div>
+      </div>
+    </div>
+
+  </div>
+    <div class="player">
+      <div class="drawed-card">
+        <div class="score">
+        <h2 class ="status">Click on the deck!</h2>
+        My Deck: <span id="my-score">26</span>
+      </div>
+      <div class="card deck" id="my-card">
+        <div class="number"></div>
+        <div class="shape"></div>
+      </div>
+      <div class="pile">
+        <div class="card" id="my-deck"></div>
+      </div>
+      </div>
+      <script src="week6codinghw.js"></script>
+  </body>
+</html>
